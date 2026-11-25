@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>תשובה לצוות אדום – סבב 3</title>
+<style>
+  :root { --ink:#1c2430; --muted:#5b6675; --line:#d9dee5; --soft:#f5f7fa;
+          --red:#b3261e; --amber:#9a6200; --green:#1e6b3a; --blue:#1f4e8c; }
+  body { font-family: "Segoe UI", Arial, "David", sans-serif; color:var(--ink); background:#fff;
+         line-height:1.65; max-width:980px; margin:0 auto; padding:28px 20px 60px; font-size:15.5px; }
+  h1 { font-size:26px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:38px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--ink); }
+  .sub { color:var(--muted); margin:0 0 18px; }
+  .box { background:var(--soft); border:1px solid var(--line); border-right:5px solid var(--blue);
+         padding:12px 16px; border-radius:6px; margin:14px 0; }
+  table { border-collapse:collapse; width:100%; margin:12px 0 18px; font-size:14.5px; }
+  th, td { border:1px solid var(--line); padding:7px 9px; vertical-align:top; text-align:right; }
+  th { background:var(--soft); font-weight:600; }
+  td:first-child { white-space:nowrap; }
+  .tag { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12.5px; font-weight:600; white-space:nowrap; }
+  .ok { background:#e2f3e8; color:var(--green); }
+  .part { background:#fdf0d5; color:var(--amber); }
+  .no { background:#fbe4e2; color:var(--red); }
+  .open { background:#e6eef8; color:var(--blue); }
+  .en { direction:ltr; unicode-bidi:isolate; }
+  ol, ul { padding-right:22px; margin:6px 0; }
+  li { margin:4px 0; }
+  @media (max-width:600px) { td:first-child { white-space:normal; } table { font-size:13.5px; } }
+  @media print { body { font-size:12.5px; } h2 { break-after:avoid; } tr { break-inside:avoid; } }
+</style>
+</head>
+<body>
+
+<h1>תשובה לצוות אדום – סבב 3</h1>
+<p class="sub">22.11.2026. תשובה למסמך "תיקונים להדבקה" (20 סעיפים), שנבדק על <span class="en">main.pdf</span> של 42 עמודים. הגרסה המתוקנת: <span class="en">main.pdf</span>, 43 עמודים. מספרי הסעיפים כאן תואמים למספור במסמך הביקורת; מספרי העמודים הם לפי הגרסה המתוקנת.</p>
+
+<div class="box">
+<b>סיכום.</b> מתוך 20 הסעיפים: <b>18 הוכנסו</b>, אחד מהם בשינוי נוסח קל (#15). <b>שניים נדחו</b> בנימוק: #8 (צמצום הגדרת "מדינה עוינת") בהחלטת מגישות הדוח, ו-#12 (נוסח PRR בפרק 3) כי הנוסח הקיים תואם את הגדרת המאמר. שני פרטים שסומנו <b>[לאמת]</b> אומתו מול המקור: הכרך של <span class="en">Zhao, Ouenniche &amp; De Smedt</span> (2024) והפירוש של PRR. הממצא החשוב ביותר בסבב, הסתירה בין כלל התקרה לבין הגדרת הסיווג הנכון, תוקן במלואו.
+</div>
+
+<h2>חלק א׳: כשל אספקה וסיווג נכון</h2>
+<table>
+<tr><th>#</th><th>הממצא</th><th>סטטוס</th><th>מה נעשה</th></tr>
+<tr><td>1</td><td>כלל 4 (תקרה) סותר את הגדרת הסיווג הנכון</td><td><span class="tag ok">תוקן</span></td><td>הנוסח המוצע הוכנס (עמ׳ 22). כשל אספקה (רמה 2) שלא נסגר מוריד את ההמלצה ל"לא מומלץ" עד לבדיקה ידנית; אירוע סייבר חמור שלא נסגר ולא עצר ייצור מוריד "מומלץ" ל"מומלץ בתנאים". הבחירה תואמת את עקרון החומרה של הפרויקט: הפגיעה ברציפות האספקה היא החמורה ביותר אחרי סנקציות.</td></tr>
+<tr><td>2</td><td>REQ-FUN-07 לא תואם לכלל 4</td><td><span class="tag ok">תוקן</span></td><td>ערך היעד: "רמה 1: פסילה; רמה 2 שלא נסגרה: ׳לא מומלץ׳" (טבלה 2.3, עמ׳ 6).</td></tr>
+<tr><td>3</td><td>זמן ההתרעה נמדד מול רף אחר מהסיווג הנכון</td><td><span class="tag ok">תוקן</span></td><td>זמן ההתרעה נמדד עכשיו עד ההמלצה "לא מומלץ", אותו רף כמו בפרק 2. הירידה הראשונה מ"מומלץ" מדווחת בנפרד, כאות מוקדם בלבד (עמ׳ 24).</td></tr>
+<tr><td>4</td><td>אין תוצאה צפויה מוגדרת לכל סוג מקרה</td><td><span class="tag ok">תוקן</span></td><td>נוספה טבלה 5.4 (עמ׳ 24) עם חמש שורות: Incora, ASCO, ישויות ברשימות, FACC וספקים מוכחים. עמודת "נכנס ל-H1?" שונתה ל"חישוב H1", כי סימן השאלה הוצג הפוך בעברית. התאריכים המדויקים של האירועים ייקבעו מול המקורות בבניית המאגר (T1.1), כמו שהוצע.</td></tr>
+<tr><td>5</td><td>לא ברור על אילו מקרים מחושב הסיווג הנכון</td><td><span class="tag ok">תוקן</span></td><td>נוסף משפט בסוף פסקת "סיווג נכון" (עמ׳ 5): השיעור מחושב על כשלים שאפשר לצפות ועל ספקים מוכחים, ושאר המקרים בודקים רכיב מסוים (טבלה 5.4).</td></tr>
+</table>
+
+<h2>חלק ב׳: תיקוני נוסח</h2>
+<table>
+<tr><th>#</th><th>הממצא</th><th>סטטוס</th><th>מה נעשה</th></tr>
+<tr><td>6</td><td>הפירוש של PRR ברשימת הקיצורים</td><td><span class="tag ok">תוקן</span></td><td>אומת בגוף המאמר הנלווה (משוואה 3): <span class="en">Potential Risk Rate</span>, שיעור הסיכונים שרק זוג מומחים אחד אישר. ברשימת הקיצורים: "<span class="en">Potential Risk Rate</span> – שיעור הסיכונים שאושרו חלקית".</td></tr>
+<tr><td>7</td><td>אין מקור למשך הבדיקה</td><td><span class="tag ok">תוקן</span></td><td>"בארגונים גדולים, קליטת ספק חדש נמשכת שבועות [10]". נבדק שהמקור (סקר HICX, חברות עם מחזור של מיליארד דולר ומעלה, 15–28 ימים אצל 63%) תומך בניסוח.</td></tr>
+<tr><td>8</td><td>להוציא "מדינה בלי יחסים דיפלומטיים" מהשער</td><td><span class="tag no">נדחה</span></td><td>מגישות הדוח בחרו להשאיר את הכלל: ספק ממדינה שאין לישראל יחסים דיפלומטיים עימה נפסל בשער. הנימוק: כלל חד ופשוט, שקל לבדוק ולהסביר, בלי סולם ביניים בממד הגיאופוליטי. מוסכם שהכלל מחמיר. ההגדרה נוסחה כהחלטה תכנונית ("בכלי נקבע ש..."), ולא כטענה משפטית, ולכן אינה דורשת מקור. רשימת המדינות תיקבע מול מקור רשמי בשלב בניית השער (T2.1), וכך גם בטבלה 5.3.</td></tr>
+<tr><td>9</td><td>קו הבסיס של H1 לא מוגדר</td><td><span class="tag ok">תוקן</span></td><td>נוסף בעמ׳ 5: קו הבסיס הוא מדד Z של Altman [13]. הוא מחושב רק לחברה שמפרסמת דוחות כספיים, ולכן ההשוואה מדווחת בנפרד לחברות ציבוריות ולחברות פרטיות. המקור הוזז במקומו ברשימה, לפי סדר ההופעה הראשונה (היה [23]).</td></tr>
+<tr><td>10</td><td>REQ-FUN-01 ו-REQ-FUN-09</td><td><span class="tag ok">תוקן</span></td><td>REQ-FUN-01: "100% מהישויות שזוהו; בעלות לא ידועה: ׳לא נבדק׳ ובדיקה ידנית". REQ-FUN-09: "המלצה בשלוש רמות ושתי תוצאות עצירה (פסילה, מידע לא מספיק)".</td></tr>
+<tr><td>11</td><td>מי ממלא את ה-AHP, ומה תפקיד התעשייה</td><td><span class="tag ok">תוקן</span></td><td>נוסף בפרק 3 (עמ׳ 8) שהמשקלות מוצגים למנחה התעשייתי להערות לפני שהם נקבעים (T1.3). זה תואם את ה-C של התעשייה האווירית ב-T1.3 בטבלה 6.2.</td></tr>
+<tr><td>12</td><td>נוסח PRR בפרק 3</td><td><span class="tag no">נדחה</span></td><td>הנוסח הקיים, "שאושרו חלקית", תואם את הגדרת המאמר (משוואה 3: אירועים שקיבלו אישור מזוג מומחים אחד בלבד). הנוסח המוצע, "שסווגו כסיכון אפשרי", פחות מדויק, ולכן הנוסח הקיים נשאר.</td></tr>
+<tr><td>13</td><td>REQ-CON-03 נספר פעמיים במטריצה</td><td><span class="tag ok">תוקן</span></td><td>קריטריון הגמישות מוגדר עכשיו כ"כמה קל להחליף סוכן, מקור או מודל בלי לשנות את שאר המערכת" (עמ׳ 19). REQ-CON-03 נשאר רק תחת אבטחת מידע. הציונים לא השתנו.</td></tr>
+<tr><td>14</td><td>T1.1 בשתי טבלאות</td><td><span class="tag ok">תוקן</span></td><td>טבלה 6.1 מפנה לטבלה 5.4; בטבלה 6.2 הוסר "באיכות ובאמינות".</td></tr>
+<tr><td>15</td><td>תיאור הסיכונים הקריטיים לא תואם את הטבלה</td><td><span class="tag ok">תוקן</span></td><td>הוכנס בשינוי נוסח קל: "שניים נוגעים לתוקף התיקוף (DAT-01, VAL-02) ושניים לאמינות הפלט של המערכת (ALG-03, ENT-07)". הסיבה: בטבלה 7.1 ENT-07 מסווג בתחום "נתונים", ולכן "המערכת עצמה" לא היה מדויק.</td></tr>
+<tr><td>16</td><td>תיאור הסיכון השיורי</td><td><span class="tag ok">תוקן</span></td><td>הנוסח המוצע הוכנס (סוף פרק 7, אחרי טבלה 7.2): הגבוה ביותר הוא ALG-03 (10), ואחריו DAT-01, VAL-02 ו-ENT-07 (8).</td></tr>
+</table>
+
+<h2>חלק ג׳: מסמך התשובה לסבב 2</h2>
+<table>
+<tr><th>#</th><th>הממצא</th><th>סטטוס</th><th>מה נעשה</th></tr>
+<tr><td>17</td><td>"שלושה מקורות משניים הוחלפו"</td><td><span class="tag ok">תוקן</span></td><td>"שני מקורות משניים הוחלפו בראשוניים (CMMC, SDN), וציטוט NIST עודכן לגרסה הנוכחית". באותה פסקה תוקן גם שאבטחת מידע כקריטריון וכתיבת מי ממלא את ה-AHP כבר אינן דחיות: הן נוספו לדוח ב-22.11.</td></tr>
+<tr><td>18</td><td>שורת "עמודים כמעט ריקים"</td><td><span class="tag ok">תוקן</span></td><td>הסטטוס שונה ל"תוקן חלקית", עם מספרי העמודים העדכניים לכל פרק.</td></tr>
+<tr><td>19</td><td>מספרי המקורות</td><td><span class="tag ok">תוקן</span></td><td>Reuters הוא [44], ו-OFAC הוא [43].</td></tr>
+<tr><td>20</td><td>כרך 15 עדיין ברשימת הפתוחים</td><td><span class="tag ok">תוקן</span></td><td>אומת מול Crossref: <span class="en">Machine Learning with Applications</span>, כרך 15, מאמר 100527 (2024). הוסר מרשימת הפתוחים.</td></tr>
+</table>
+
+<h2>חלק ד׳: נושאים להחלטה</h2>
+<table>
+<tr><th>הנושא</th><th>סטטוס</th><th>התשובה</th></tr>
+<tr><td>היקף: 30 עמודי גוף מול כ-40</td><td><span class="tag open">מול המנחה</span></td><td>הקיצור נעשה בכוונה, לפי מספר העמודים שהמדריך מציע לכל פרק. אם המנחה יבקש להרחיב, ההרחבה תהיה בפרקים 3 ו-5.</td></tr>
+<tr><td>תקציר של 145 מילים</td><td><span class="tag no">נדחה</span></td><td>לפי הנחיית המרצה בשיעור 5, התקציר הוא כ-200 מילים, וזו ההנחיה שנבחרה.</td></tr>
+<tr><td>לוח הזמנים ותקופת הבחינות</td><td><span class="tag open">פתוח</span></td><td>מוסכם שלוח הזמנים צפוף ושבניית הסוכנים נופלת על סוף הסמסטר. ייבדק מול לוח השנה האקדמי ומול המנחה.</td></tr>
+<tr><td>R אחד ב-T0, T1.3 ו-T5.1</td><td><span class="tag no">נדחה</span></td><td>שלוש המשימות מבוצעות במשותף, ולכן שתי המגישות מסומנות R.</td></tr>
+<tr><td>נתון הרוטציה מדוח המבקר (26%)</td><td><span class="tag no">לא נוסף</span></td><td>הנתון עוסק ברוטציה של עובדי רכש ולא בהערכת ספקים, ולכן אינו תורם לטיעון של פרק 1.</td></tr>
+<tr><td>קומפילציה ובדיקה אחרי ההדבקה</td><td><span class="tag ok">בוצע</span></td><td>הקומפילציה נקייה. טבלה 5.4 מופיעה ברשימת הטבלאות, וההפניות אליה מפרקים 2 ו-6 תקינות.</td></tr>
+</table>
+
+<h2>פתוח לפני ההגשה</h2>
+<ol>
+<li>לוח הזמנים מול תקופת הבחינות ותחילת סמסטר ב׳.</li>
+<li>מעבר בעיניים על כל עמוד, וקורא חיצוני לתקציר.</li>
+</ol>
+
+</body>
+</html>

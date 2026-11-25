@@ -1,0 +1,48 @@
+% ---------- עמוד שער (ללא מספר עמוד) ----------
+% שימו לב: לפי המדריך, מספרי ת"ז מופיעים רק בעותק שמוגש למנחה ולוועדה.
+% אם המאגר ב-GitHub ציבורי – לא להכניס כאן ת"ז.
+\begin{titlepage}
+\centering
+\setlength{\parskip}{0pt}
+\vspace*{-1.5cm}
+
+% לוגואים: הקבצים נמצאים ב"עמוד שער ותקציר/logos/".
+% אם קובץ חסר, מוצגת מסגרת עם טקסט במקומו.
+\newcommand{\logo}[3]{\IfFileExists{#1}{\includegraphics[height=#2]{#1}}{\fbox{\parbox[c][1.6cm][c]{4cm}{\centering #3}}}}
+\logo{../עמוד שער ותקציר/logos/biu-logo.png}{1.8cm}{[לוגו בר-אילן]}
+\hfill
+\logo{../עמוד שער ותקציר/logos/decixai-logo.png}{1.5cm}{[לוגו הצוות]}
+\hfill
+\logo{../עמוד שער ותקציר/logos/iai-logo.png}{1.6cm}{[לוגו התעשייה האווירית]}
+
+\vspace{1cm}
+{\large אוניברסיטת בר-אילן -- המחלקה לניהול, מסלול ניהול טכנולוגיות\par}
+\vspace{0.2cm}
+{\large סמינריון מחקרי בניהול טכנולוגיות (5523001)\par}
+
+\vspace{1.2cm}
+{\LARGE\bfseries הערכת ספקים בשלב טרום ההתקשרות מתוך מידע ציבורי\\[0.2cm]
+באמצעות מערכת סוכני בינה מלאכותית:\\[0.2cm]
+מתודולוגיה לחברות ציבוריות ופרטיות בתעשייה הביטחונית-אווירית\par}
+
+\vspace{0.8cm}
+{\large\bfseries\foreignlanguage{english}{Pre-Contract Supplier Assessment from Public Information\\
+Using a Multi-Agent AI System:\\
+A Methodology for Public and Private Companies\\
+in the Defense-Aerospace Industry}\par}
+
+\vspace{1cm}
+{\Large דוח מכין\par}
+
+\vspace{1cm}
+% בעברית (bidi=basic) העמודות בטבלה נקראות משמאל לימין, לכן התווית בעמודה השנייה
+\begin{tabular}{r >{\bfseries}r}
+טל אזואלוס & מגישות: \\
+עמית סוסן & \\[0.3cm]
+ד"ר יורם סגל, אוניברסיטת בר-אילן & מנחה אקדמי: \\[0.3cm]
+מר מירום לוין, התעשייה האווירית לישראל & מנחה תעשייתי: \\[0.3cm]
+25.11.2026 & תאריך הגשה: \\
+\end{tabular}
+
+\vfill
+\end{titlepage}

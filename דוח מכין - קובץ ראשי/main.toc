@@ -1,0 +1,61 @@
+\babel@toc {hebrew}{}\relax 
+\contentsline {chapter}{תקציר}{i}{chapter*.1}%
+\contentsline {chapter}{רשימת איורים}{iv}{chapter*.3}%
+\contentsline {chapter}{רשימת טבלאות}{v}{chapter*.4}%
+\contentsline {chapter}{רשימת קיצורים ומונחים}{vi}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}מבוא ורקע}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}המגמה: סיכוני שרשרת האספקה וכניסת הבינה המלאכותית}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}ההקשר היישומי: התעשייה האווירית ותהליך טרום ההתקשרות}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}המוטיבציה: למה התהליך הקיים כבר לא מספיק}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}מבנה הדוח}{2}{section.1.4}%
+\contentsline {chapter}{\numberline {2}הגדרת הבעיה, שאלת המחקר והיעדים}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}המצב הרצוי}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}שאלת המחקר וההשערות}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}מפרט הדרישות}{5}{section.2.3}%
+\contentsline {chapter}{\numberline {3}סקירת הספרות ומאמר הדגל}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}הערכת ספקים וקבלת החלטות רב-קריטריונית}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}הערכת איכות וביצועים של ספקים}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}סיכון גיאופוליטי ורמת המדינה}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}חיזוי כשל פיננסי של ספקים}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}זיהוי אירועים שליליים מטקסט}{10}{section.3.5}%
+\contentsline {section}{\numberline {3.6}אבטחת סייבר של ספקים}{10}{section.3.6}%
+\contentsline {section}{\numberline {3.7}מודלי שפה ומערכות מרובות סוכנים בשרשרת אספקה}{11}{section.3.7}%
+\contentsline {section}{\numberline {3.8}מטריצת הספרות}{11}{section.3.8}%
+\contentsline {section}{\numberline {3.9}מאמר הדגל}{12}{section.3.9}%
+\contentsline {section}{\numberline {3.10}המאמר הנלווה: זיהוי סיכונים מחדשות}{13}{section.3.10}%
+\contentsline {section}{\numberline {3.11}פער הידע}{14}{section.3.11}%
+\contentsline {chapter}{\numberline {4}חקר השוק והמוצרים הקיימים}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}היקף השוק: שלוש שכבות}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}סקירת מוצרים}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}השוואה גרפית}{17}{section.4.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {chapter}{\numberline {5}חלופות תכן, בחירת פתרון וחדשנות}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}שלוש חלופות שונות בעיקרון}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}מטריצת החלטה משוקללת}{20}{section.5.2}%
+\contentsline {section}{\numberline {5.3}ארכיטקטורת המערכת}{21}{section.5.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {5.4}הדאטה: מקורות מידע ציבוריים}{23}{section.5.4}%
+\contentsline {section}{\numberline {5.5}החדשנות והערך המוסף}{24}{section.5.5}%
+\contentsline {chapter}{\numberline {6}תוכנית עבודה}{25}{chapter.6}%
+\contentsline {section}{\numberline {6.1}פירוק העבודה (\foreignlanguage {english}{WBS})}{25}{section.6.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {6.2}מטריצת אחריות (\foreignlanguage {english}{RACI})}{26}{section.6.2}%
+\contentsline {section}{\numberline {6.3}לוח זמנים ותרשים גאנט}{27}{section.6.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {chapter}{\numberline {7}ניתוח סיכונים ותוכנית הפחתה}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}זיהוי הסיכונים וכימותם}{29}{section.7.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {7.2}פעולות מנע ותוכניות מגירה}{30}{section.7.2}%
+\contentsline {chapter}{\numberline {8}סיכום}{31}{chapter.8}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {chapter}{מקורות}{32}{figure.8.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 

@@ -1,0 +1,142 @@
+% ---------- פרק 4: חקר השוק והמוצרים הקיימים ----------
+% 22.11.2026: גוף שלישי, קיצור, איורים בעברית. לפי פרק 6 במדריך.
+% מחירי המוצרים לא פורסמו – לא להמציא. הציונים בטבלה 4.2 הם הערכה לפי התיעוד הפומבי, לא מדידה.
+\chapter{חקר השוק והמוצרים הקיימים}\label{ch:market}
+
+הפרק עונה על שתי שאלות: כמה גדול השוק לתוכנות לבדיקת ספקים, ואילו מוצרים קיימים ומה הם בודקים, את איכות הספק, את הסיכונים שבו או את שניהם.
+
+\section{היקף השוק: שלוש שכבות}\label{sec:tam}
+
+\textbf{\en{TAM}: השוק העולמי לתוכנות ניהול סיכוני ספקים.} ה-\en{TAM} נמדד לפי שוק התוכנות לניהול סיכוני ספקים וצדדים שלישיים (\en{Third-Party Risk Management}), שבהן חברות בודקות ומנטרות את ספקיהן. לפי \en{WiseGuy Reports} השוק הוערך ב-5.93 מיליארד דולר ב-2025, וצפוי לצמוח ל-12.5 מיליארד עד 2035, בשיעור צמיחה שנתי ממוצע (\en{CAGR}) של 7.7\% \cite{wiseguy2026}. זהו דוח מסחרי שאינו מפרסם את שיטת החישוב, וחברות מחקר אחרות מגדירות את השוק אחרת, ולכן המספר משמש כסדר גודל. אינדיקציה בלתי תלויה לבשלות השוק היא דוח \en{Magic Quadrant} נפרד של \en{Gartner} לפתרונות ניהול סיכוני ספקים, שפורסם במאי 2026 \cite{everstream2026}.
+
+\textbf{\en{SAM}: התעשייה הביטחונית.} הפלח הוא \textbf{יצרניות ביטחוניות ואוויריות}, שחייבות לבדוק סנקציות ובקרת יצוא ומוגבלות במידע שמותר להן להעלות לענן. לפי \en{SIPRI}, הכנסות 100 יצרניות הנשק הגדולות הגיעו ב-2024 לשיא של 679 מיליארד דולר, עלייה של 5.9\%, ותשע מהן במזרח התיכון \cite{sipri2025}. \en{SIPRI} והדוחות הכספיים של היצרניות אינם מפרטים את ההוצאה על כלים לבדיקת ספקים, ולא נמצא לה מקור ציבורי; לכן ה-\en{SAM} מוגדר לפי \textbf{מספר ארגונים}, כ-100 היצרניות הגדולות, ולא לפי סכום כספי.
+
+\textbf{\en{SOM}: ארגון אחד בשנה הראשונה.} הנתח שאפשר לתפוס בפועל הוא יחידות הרכש והפיתוח העסקי של תע"א, שעבדה בסוף 2022 עם כ-5,100 ספקים \cite{mevaker2024}. הערך השנתי $V$ מחושב מהחיסכון בשעות עבודה:
+\begin{equation}\label{eq:som}
+V = N \cdot \left(t_{\mathrm{manual}} - t_{\mathrm{tool}}\right) \cdot c_{h} - C_{\mathrm{run}}
+\end{equation}
+כאשר $N$ הוא מספר הספקים החדשים שנבדקים בשנה, $t_{\mathrm{manual}}$ ו-$t_{\mathrm{tool}}$ שעות הבדיקה היום ועם הכלי, $c_{h}$ עלות שעת עבודה ו-$C_{\mathrm{run}}$ עלות ההפעלה השנתית. $N$, $t_{\mathrm{manual}}$ ו-$c_{h}$ הם נתונים פנימיים של הארגון שלא פורסמו, ו-$t_{\mathrm{tool}}$ ו-$C_{\mathrm{run}}$ נמדדים בהרצת הכלי על מקרי התיקוף (פרק~\ref{ch:design}). אינדיקציה גסה לעלות ההפעלה: במערכת של \en{AlMahri} ועמיתיו ניתוח מלא עלה כ-0.08 דולר וארך כ-4 דקות \cite{almahri2026}, כלומר עלות זניחה ביחס לשעת אנליסט.
+
+\section{סקירת מוצרים}\label{sec:products}
+
+נסקרו ארבעה מוצרים מסחריים, שכל אחד מייצג גישה אחרת. התיאורים מבוססים על מה שהחברות מפרסמות; המוצרים לא נבדקו בפועל, ואף חברה אינה מפרסמת מחירון.
+\begin{itemize}
+\item \textbf{\en{RapidRatings} (פיננסי):} ציון בריאות פיננסית (\en{FHR}) בסולם 0 עד 100 מדוחות כספיים, שחוזה חדלות פירעון ב-12 החודשים הבאים. לדירוג חברה פרטית, החברה צריכה \textbf{למסור את דוחותיה} למערכת של \en{RapidRatings} \cite{rrfaq}, כלומר נדרש שיתוף פעולה של הספק.
+\item \textbf{\en{Interos} (רב-ממדי):} ציון מאוחד (\en{i-Score}) שמכסה סייבר, רגולציה, גיאופוליטיקה, אסונות, פיננסים ו-\en{ESG}, על יותר מ-250 מיליון ישויות \cite{interosgov}. ב-2023 נבחר לספק לצי האמריקאי ניהול סיכוני שרשרת אספקה \cite{interosnavy2023}, ולכן הוא הקרוב ביותר לשוק הביטחוני.
+\item \textbf{\en{Bitsight} (סייבר):} דירוג אבטחה בסולם 250 עד 900 ממידע שנאסף מבחוץ, \textbf{בלי מידע מהחברה הנבדקת} \cite{bitsight2026}, בדומה לגישה הפסיבית של ממד הסייבר המוצע.
+\item \textbf{\en{Everstream} ו-\en{Prewave} (ניטור אירועים):} ניתוח מקורות פתוחים בבינה מלאכותית להתרעה על אירועים אצל ספקים. שתיהן מדווחות שדורגו כ-\en{Leaders} ב-\en{Gartner} 2026 \cite{everstream2026,prewave2026}, והן מוצגות כמוצר אחד.
+\end{itemize}
+
+טבלה~\ref{tab:products} משווה אותם למסגרת \en{AIDM} של מאמר הדגל, לתהליך הידני ולפתרון המוצע.
+
+{\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{1.75cm}|>{\raggedright\arraybackslash}p{1.55cm}|>{\raggedright\arraybackslash}p{1.55cm}|>{\raggedright\arraybackslash}p{1.45cm}|>{\raggedright\arraybackslash}p{1.55cm}|>{\raggedright\arraybackslash}p{1.55cm}|>{\raggedright\arraybackslash}p{1.45cm}|>{\raggedright\arraybackslash}p{1.65cm}|}
+\caption{השוואה רב-פרמטרית בין המוצרים, מאמר הדגל, התהליך הידני והפתרון המוצע}\label{tab:products}\\
+\hline
+\textbf{פרמטר} & \en{RapidRatings} & \en{Interos} & \en{Bitsight} & \en{Everstream} / \en{Prewave} & \textbf{מאמר הדגל} (\en{AIDM}) & \textbf{תהליך ידני} & \textbf{הפתרון המוצע} \\ \hline
+\endfirsthead
+\hline
+\textbf{פרמטר} & \en{RapidRatings} & \en{Interos} & \en{Bitsight} & \en{Everstream} / \en{Prewave} & \textbf{מאמר הדגל} (\en{AIDM}) & \textbf{תהליך ידני} & \textbf{הפתרון המוצע} \\ \hline
+\endhead
+עיקרון הפעולה & מודל על דוחות כספיים & ציון מאוחד מכמה תחומי סיכון & סריקה חיצונית של תשתיות & ניתוח טקסט ממקורות פתוחים & \en{AHP} עם מומחים וירטואליים & חיפוש ידני ושיקול דעת & סוכן לכל ממד, שער ושקלול \\ \hline
+ממדים מכוסים & פיננסי & רוב הממדים & סייבר & אירועים, חלקית פיננסי וגיאופוליטי & איכות, עלות ומאפייני ספק & תלוי באנליסט & שבעה ממדים, שני חלקים \\ \hline
+איכות ואמינות הספק & לא & לא פורסם & לא & לא פורסם & כן, בשקלול & לפי האנליסט & ממד ייעודי \\ \hline
+ספק פרטי בלי דוחות & דורש שהספק ימסור & לא פורסם & לא רלוונטי & לפי כיסוי בחדשות & לא אוסף מידע & חלקי & מדדים עקיפים וכיסוי \\ \hline
+דיווח על מידע חסר & לא פורסם & לא פורסם & לא פורסם & לא פורסם & לא & לא שיטתי & ציון כיסוי ורשימה ידנית \\ \hline
+שלב בתהליך & ניטור ובחירה & ניטור & בחירה וניטור & ניטור & בחירה & טרום התקשרות & \textbf{טרום התקשרות} \\ \hline
+מקור לכל טענה & לא פורסם & לא פורסם & לא פורסם & לא פורסם & לא & תלוי באנליסט & חובה \\ \hline
+עלות & לא פורסמה & לא פורסמה & לא פורסמה & לא פורסמה & לא פורסמה & שעות אנליסט & קריאות למודל \\ \hline
+נקודת תורפה & תלוי בספק הפרטי & סגור, לא ברור איך מגיע לציון & ממד אחד & ספקים קיימים & עוצר במשקלות & איטי, לא אחיד & לא נבדק עדיין \\ \hline
+\end{longtable}
+}
+
+\textbf{מה הטבלה מראה.} המוצרים חזקים בממד שלהם, ו-\en{Interos} מכסה את רובם ופועל בשוק הביטחוני. אבל בשלוש שורות כמעט כל המשבצות הן "לא" או "לא פורסם": \textbf{איכות ואמינות}, \textbf{דיווח על מידע חסר} ו\textbf{מקור לכל טענה} (\en{REQ-FUN-03} ו-\en{REQ-NFR-01}). המוצרים בנויים לחפש סיכונים, ולא לענות על השאלה "האם הספק טוב". מאחר שהבדיקה נעשתה על התיעוד הפומבי בלבד, הממצא הוא "לא נמצא בתיעוד", ולא "לא קיים".
+
+\section{השוואה גרפית}\label{sec:market-graphs}
+
+שני הגרפים נגזרים מטבלה~\ref{tab:products} דרך טבלת הציונים~\ref{tab:axes}, על \textbf{שישה נושאים}: איכות והתאמה טכנית אוחדו, כי אף מוצר אינו מפריד ביניהן; עמידה ביעדים הושמטה, כי אף מוצר אינו מפרסם שהוא בודק אותה; ודיווח הכיסוי נוסף. כל נושא מקבל 0 (לא מכוסה), 1 (חלקית) או 2 (מכוסה); "לא פורסם" נספר 0 ומסומן בכוכבית. הפתרון המוצע מוצג לפי \textbf{היעד שלו}, ולצידו המסגרת \en{LARD-SC} של המאמר הנלווה. מאמר הדגל אינו מופיע, כי אינו אוסף מידע על ספקים.
+
+{\small
+\begin{longtable}{|>{\raggedright\arraybackslash}p{3.2cm}|c|c|c|c|c|c|c|}
+\caption{ציוני הכיסוי לגרפים (0 עד 2). כוכבית: לא פורסם, נספר 0}\label{tab:axes}\\
+\hline
+\textbf{מוצר} & \textbf{פיננסי} & \textbf{סייבר} & \textbf{גיאו\-פוליטי} & \textbf{אירועים} & \textbf{איכות וטכני} & \textbf{דיווח כיסוי} & \textbf{סכום} \\ \hline
+\endfirsthead
+\hline
+\textbf{מוצר} & \textbf{פיננסי} & \textbf{סייבר} & \textbf{גיאו\-פוליטי} & \textbf{אירועים} & \textbf{איכות וטכני} & \textbf{דיווח כיסוי} & \textbf{סכום} \\ \hline
+\endhead
+\en{RapidRatings} & 2 & 0 & 0 & 0 & 0 & 0* & 2 \\ \hline
+\en{Interos} & 2 & 2 & 2 & 1 & 0* & 0* & 7 \\ \hline
+\en{Bitsight} & 0 & 2 & 0 & 0 & 0 & 0* & 2 \\ \hline
+\en{Everstream} / \en{Prewave} & 1 & 0 & 1 & 2 & 0* & 0* & 4 \\ \hline
+\en{LARD-SC} (מאמר נלווה) & 1 & 0 & 1 & 2 & 0 & 0 & 4 \\ \hline
+הפתרון המוצע (יעד) & 2 & 2 & 2 & 2 & 2 & 2 & 12 \\ \hline
+\end{longtable}
+}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=0.85]
+\def\R{3}
+\foreach \r in {1,2}{
+  \draw[gray!40] (90:\r*\R/2) \foreach \a in {150,210,270,330,30,90}{ -- (\a:\r*\R/2)};
+}
+\foreach \a/\lab in {90/פיננסי,150/סייבר,210/גיאופוליטי,270/אירועים חריגים,330/איכות והתאמה טכנית,30/דיווח כיסוי}{
+  \draw[gray!60] (0,0) -- (\a:\R);
+  \node[font=\small] at (\a:\R+1.25) {\foreignlanguage{hebrew}{\lab}};
+}
+% Interos: 2,2,2,1,0,0
+\draw[blue,thick,fill=blue,fill opacity=0.08] (90:\R) -- (150:\R) -- (210:\R) -- (270:\R/2) -- (330:0) -- (30:0) -- cycle;
+% RapidRatings: 2,0,0,0,0,0
+\draw[orange,thick,dashed] (90:\R) -- (150:0) -- (210:0) -- (270:0) -- (330:0) -- (30:0) -- cycle;
+% LARD-SC: 1,0,1,2,0,0
+\draw[violet,thick,dotted] (90:\R/2) -- (150:0) -- (210:\R/2) -- (270:\R) -- (330:0) -- (30:0) -- cycle;
+% הפתרון המוצע (יעד): 2 בכולם
+\draw[red!70!black,very thick] (90:\R) \foreach \a in {150,210,270,330,30}{ -- (\a:\R)} -- cycle;
+\end{tikzpicture}
+
+\vspace{1mm}
+{\small
+\textcolor{red!70!black}{\rule[2pt]{6mm}{1.5pt}} הפתרון המוצע (יעד) \quad
+\textcolor{violet}{\rule[2pt]{6mm}{1pt}} \en{LARD-SC} \quad
+\textcolor{orange}{\rule[2pt]{6mm}{1pt}} \en{RapidRatings} \quad
+\textcolor{blue}{\rule[2pt]{6mm}{1pt}} \en{Interos}}
+\caption{תרשים רדאר: כיסוי של שישה נושאים (0 עד 2), לפי טבלה~\ref{tab:axes}}\label{fig:radar}
+\end{figure}
+
+איור~\ref{fig:radar} מראה ש-\en{Interos} מכסה את רוב הנושאים, וההבדל בינו לבין הפתרון המוצע הוא בשני צירים: \textbf{איכות הספק והתאמתו הטכנית}, ו\textbf{דיווח על כיסוי המידע}.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=10.5cm, height=6.3cm,
+  xmin=0, xmax=13, ymin=-0.5, ymax=2.6,
+  xlabel={\foreignlanguage{hebrew}{רוחב הכיסוי: סכום הציונים בטבלה \ref{tab:axes}}},
+  ylabel={\foreignlanguage{hebrew}{גישה למידע}},
+  ytick={0,1,2},
+  yticklabels={\foreignlanguage{hebrew}{דורש מידע מהספק},\foreignlanguage{hebrew}{מידע מסחרי בתשלום},\foreignlanguage{hebrew}{מידע ציבורי בלבד}},
+  yticklabel style={font=\footnotesize},
+  grid=both, grid style={gray!20},
+]
+\addplot[only marks, mark=*, mark size=3pt, blue] coordinates {(7,1)};
+\node[font=\footnotesize, anchor=south west] at (axis cs:7.1,1.08) {Interos};
+\addplot[only marks, mark=*, mark size=3pt, orange] coordinates {(2,0)};
+\node[font=\footnotesize, anchor=south] at (axis cs:2,0.08) {RapidRatings};
+\addplot[only marks, mark=*, mark size=3pt, teal] coordinates {(2,1)};
+\node[font=\footnotesize, anchor=north] at (axis cs:2,0.92) {Bitsight};
+\addplot[only marks, mark=*, mark size=3pt, gray] coordinates {(4,1)};
+\node[font=\footnotesize, anchor=south] at (axis cs:4,1.08) {Everstream/Prewave};
+\addplot[only marks, mark=square*, mark size=3pt, violet] coordinates {(4,2)};
+\node[font=\footnotesize, anchor=south] at (axis cs:4,2.08) {LARD-SC};
+\addplot[only marks, mark=o, mark size=4pt, very thick, red!70!black] coordinates {(12,2)};
+\node[font=\footnotesize, anchor=south] at (axis cs:11.4,2.08) {\foreignlanguage{hebrew}{הפתרון המוצע}};
+\end{axis}
+\end{tikzpicture}
+\caption{גרף פיזור: רוחב הכיסוי מול סוג הגישה למידע. הפתרון המוצע (עיגול ריק) מוצג לפי היעד שלו}\label{fig:scatter}
+\end{figure}
+
+איור~\ref{fig:scatter} מראה שבדרך כלל כיסוי רחב דורש מידע מסחרי בתשלום, ודירוג פיננסי של חברה פרטית דורש שהספק ימסור דוחות. הפתרון המוצע מכוון לפינה הימנית העליונה, \textbf{כיסוי רחב מתוך מידע ציבורי בלבד}. המחיר הוא שהכיסוי לא יהיה מלא בכל מקרה, ולכן ציון הכיסוי הוא חלק מהפלט.
+
+\textbf{מסקנה.} הכלי המוצע אינו מתחרה ב-\en{Interos} על היקף הנתונים. הוא מוסיף שכבה שלא נמצאה בתיעוד של אף מוצר: \textbf{הערכה מלאה}, חוזקות לצד סיכונים, עם \textbf{המלצה שקופה} שמציגה מקור לכל טענה ומדווחת כמה מהמידע נמצא. הוא אינו דורש נתונים פנימיים, אך באב-הטיפוס שם הספק והרכיב נשלחים למודל שפה חיצוני, וזה עצמו מידע על כוונות רכש; לכן אבטחת מידע היא קריטריון בבחירת החלופה (פרק~\ref{ch:design}) וסיכון בפרק~\ref{ch:risks}.

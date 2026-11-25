@@ -1,0 +1,48 @@
+% =========================================================
+% דוח מכין – מצפן ספקים
+% הקובץ הראשי: מחבר את הפרקים. כל העיצוב נמצא ב-template.cls.
+% קומפילציה: lualatex main.tex  (פעמיים-שלוש, לתוכן העניינים)
+% =========================================================
+\documentclass{template}
+
+\begin{document}
+
+% ---------- עמודים מקדימים ----------
+% כל חלק נמצא בתיקייה משלו
+% מספור: עמודים פותחים בספרות רומיות, גוף הדוח מתחיל מ-1
+\input{../עמוד שער ותקציר/titlepage}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\input{../עמוד שער ותקציר/abstract}
+% תוכן העניינים והרשימות בריווח צפוף יותר
+{\setstretch{1.15}
+\tableofcontents
+\clearpage
+\listoffigures
+\addcontentsline{toc}{chapter}{רשימת איורים}
+\listoftables
+\addcontentsline{toc}{chapter}{רשימת טבלאות}
+}
+\clearpage
+\input{../עמוד שער ותקציר/abbreviations}
+
+% ---------- גוף הדוח (מספור רגיל מ-1) ----------
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{../פרק 1 - מבוא/ch1-introduction}
+\input{../פרק 2 - הגדרת הבעיה/ch2-problem}
+\input{../פרק 3 - סקירת ספרות/ch3-literature}
+\input{../פרק 4 - חקר שוק/ch4-market}
+\input{../פרק 5 - חלופות ותכן/ch5-design}
+\input{../פרק 6 - תוכנית עבודה/ch6-workplan}
+\input{../פרק 7 - סיכונים/ch7-risks}
+\input{../פרק 8 - סיכום/ch8-summary}
+
+% ---------- מקורות ----------
+\clearpage
+% השורה בתוכן העניינים נכתבת כאן, בהקשר עברי, כדי שלא תתהפך
+\addcontentsline{toc}{chapter}{מקורות}
+\input{../מקורות/references}
+
+\end{document}
